@@ -1,1 +1,11 @@
 <center><h1><%= @player_name %> vs. The Computer!</h1></center>
+
+<center><h1>Enter your move...</h1></center>
+
+<center><form action="/name" method="post">
+  <label for="move">
+    rock, paper or scissors?
+    <input type="text" name="move">
+  </label>
+  <input type="submit" value="Submit">
+</form></center>
