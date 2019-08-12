@@ -10,22 +10,26 @@ class Rocky < Sinatra::Base
   
     post '/name' do
       session[:player_name] = params[:player_name]
-      redirect '/name'
+      redirect '/move'
     end
   
-    get '/name' do
+    get '/move' do
       @player_name = session[:player_name]
-      erb :name
+      erb :move
     end
 
     post '/move' do
       session[:player_move] = params[:player_move]
-      redirect '/play'
+      redirect '/result'
     end
 
-    get '/play' do
+    get '/result' do
       @player_move = session[:player_move]
-      erb :play
+      erb :result
+    end
+
+    post '/result' do
+      erb :result
     end
   
     # start the server if ruby file executed directly
