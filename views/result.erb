@@ -1,10 +1,11 @@
+
 <center><h1>Your move: <%= @player_move %></h1></center>
 <center><h1>Computer move: <%@computer_move%></h1></center>
 		
-		<% if @result == "It's a draw" %>
+		<% if @game_result == "It's a draw" %>
 			<h2>It's a draw!<br /><a href="/newgame">Play again!</a></h2>
-		<% elsif @game_result == "win" %>
-			<h2>Congratulations, you won!<br /><a href="/newgame">Play again!</a></h2>
-		<% elsif @game_result == "lose" %>
-			<h2>Sorry, you lost!<br /><a href="/newgame">Play again!</a></h2>
+		<% elsif @game_result == "You win" %>
+			<h2>Baller, you won!<br /><a href="/newgame">Play again!</a></h2>
+		<% elsif @game_result == "Computer wins!" %>
+			<h2>Oh sweetie, you lost!<br /><a href="/newgame">Play again!</a></h2>
 		<% end %>

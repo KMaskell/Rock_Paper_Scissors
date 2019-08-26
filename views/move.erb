@@ -1,11 +1,9 @@
-<center><h1><%= @player_name %> vs. ME the computer!</h1></center>
+<center><h1>It's YOU <%= @player_name %> vs. ME the computer!</h1></center>
 
-<center><h1>Enter your move...</h1></center>
+<center><h1>Hit your move...</h1></center>
 
-<center><form action="/move" method="post">
-  <label for="player_move">
-    rock, paper or scissors?
-    <input type="text" name="player_move">
-  </label>
-  <input type="submit" value="Submit">
-</form></center>
+<center>
+<div><form action='/rock' method="post"><input type="submit" name="player_move" value="rock"></form></div>
+<div><form action='/paper' method="post"><input type="submit" name ="player_move" value="paper"></form></div>
+<div><form action='/scissors' method="post"><input type="submit" name="player_move" value="scissors"></form></div>
+</center>
