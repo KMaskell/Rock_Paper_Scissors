@@ -1,4 +1,4 @@
-#require 'web_helpers'
+require_relative 'web_helpers'
 
 describe 'Enter names' do
     it 'submitting names' do

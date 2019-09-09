@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra'
+require 'capybara'
 
 class Rocky < Sinatra::Base
     enable :sessions
@@ -20,22 +21,22 @@ class Rocky < Sinatra::Base
 
     post '/rock' do
       session[:player_move] = params[:player_move]
-      redirect '/result'
+      redirect '/game'
     end
 
     post '/paper' do
       session[:player_move] = params[:player_move]
-      redirect '/result'
+      redirect '/game'
     end
 
     post '/scissors' do
       session[:player_move] = params[:player_move]
-      redirect '/result'
+      redirect '/game'
     end
 
-    get '/result' do
+    get '/game' do
       @player_move = session[:player_move]
-      erb :result
+      erb :game
     end
   
     # start the server if ruby file executed directly

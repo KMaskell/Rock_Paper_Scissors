@@ -1,5 +1,7 @@
+require 'spec_helper'
+
 def sign_in_and_play
     visit('/')
-    fill_in [:player_name], with: 'Marmaduke'
+    fill_in :player_name, with: 'Kat'
     click_button 'Submit'
-  end
+end

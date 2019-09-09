@@ -1,0 +1,83 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/katmaskell/Documents/Makers/Weekend_Challenges/Rock_Paper_Scissors/app.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/katmaskell/Documents/Makers/Weekend_Challenges/Rock_Paper_Scissors/spec/features/web_helpers.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/katmaskell/Documents/Makers/Weekend_Challenges/Rock_Paper_Scissors/spec/features/enter_name_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/katmaskell/Documents/Makers/Weekend_Challenges/Rock_Paper_Scissors/spec/features/testing_infrastructure_spec.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1568021280
+  }
+}
